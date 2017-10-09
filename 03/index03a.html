@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://polygit.org/components/webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="import" href="picture-frame.html">
+    
+  </head>
+  <body>
+    <H2>Polymer2 First Element Tutorial</H2>
+    <p> Add local styling in Shadow dom.
+      <br/> Use a standard CSS inline <em>&lt;style&gt;</em> element 
+      <br/> Place the style within the (Shadow Dom) &lt;template&gt;.
+    </p>
+    <p> Use the Shadow Dom <em>&lt;slot&gt;&lt;/slot&gt;</em> element.  
+    </p>
+    <p>When referenced, HTML children of the custom &lt;picture-frame&gt; element 
+  <br/> are rendered within the <em>&lt;slot&gt;</em>
+  </p>
+ <hr/>
+  <div id="container">
+   <picture-frame>
+         <img src="https://www.polymer-project.org/images/logos/p-logo-32.png">
+
+   </picture-frame>
+   <br/>
+   <picture-frame>
+         I'm just some text within another picture-frame element.
+
+   </picture-frame>
+   
+  </div>
+  </body>
+</html>
