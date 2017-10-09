@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://polygit.org/components/webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="import" href="custom-element.html">
+    
+  </head>
+  <body>
+    <H2>Polymer2 First Element Tutorial</H2>
+    <p> 
+    <ol>
+     <li> In custom-element.html,Define an ES6 class that extends Polymer.ELement.
+      <br/> The name of the element is 'custom-element'.
+      <br/> The name of the class is CustomElement.
+      <br/> customElements.define  does the definition.
+      <br/> The required Javascript is obtained by a link import:
+      <br/>&nbsp;&nbsp;
+        <code>&lt;link rel="import"  href="https://polygit.org/components/polymer/polymer-element.html"&gt;
+</code>
+     </li>
+     <li>The name of the custom element must 
+       <ul>
+        <li>start with an ASCII letter</li>
+        <li>contain a dash</li>
+       </ul>
+     <li> In this html file, load the custom element with
+          <br/>&nbsp;&nbsp;<code>&lt;link rel="import" href="custom-element.html"&gt;</code>
+     </li>
+     <li> The registered element is referenced as a normal html tag:
+        <br>&nbsp;&nbsp;
+      <code>&lt;custom-element&gt;&lt;/custom-element&gt;</code>
+     </li>
+    </ol>
+    </p>
+ 
+ <hr/>
+  <div id="container">
+   <custom-element></custom-element>
+   <custom-element/>
+  </div>
+  </body>
+</html>
