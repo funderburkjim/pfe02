@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://polygit.org/components/webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="import" href="dom-element.html">
+    
+  </head>
+  <body>
+    <H2>Polymer2 First Element Tutorial</H2>
+    <p> In element definition, use Shadow DOM
+    <ol>
+     <li> enclose the element definition in a <em>&lt;dom-module&gt;</em>
+      <br/> The 'id' of the dom-module should(?) equal the name of the custom element.
+     </li>
+     <li>The class registration does not (in this example) require a constructor.
+     </li>
+     <li>Put html for the element inside a &lt;template&gt; 
+       
+     <li> In this html file, load the custom element with
+          <br/>&nbsp;&nbsp;<code>&lt;link rel="import" href="dom-element.html"&gt;</code>
+     </li>
+     <li> The registered element is referenced as a normal html tag:
+        <br>&nbsp;&nbsp;
+      <code>&lt;dom-element&gt;&lt;/dom-element&gt;</code>
+     </li>
+    </ol>
+    </p>
+ 
+ <hr/>
+  <div id="container">
+   <dom-element></dom-element>
+   <br/>
+   <dom-element/>
+  </div>
+  </body>
+</html>

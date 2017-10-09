@@ -1,0 +1,15 @@
+<link rel="import"  href="https://polygit.org/components/polymer/polymer-element.html">
+
+<dom-module id="dom-element">
+<template>
+ <p>I'm a DOM element. This is my shadow DOM!</p>
+</template>
+<script>
+  // Define the class for a new element called custom-element
+  class DomElement extends Polymer.Element {
+    static get is() { return "dom-element"; }
+  }
+  // Register the new element with the browser
+  customElements.define(DomElement.is, DomElement);
+</script>
+</dom-module>
